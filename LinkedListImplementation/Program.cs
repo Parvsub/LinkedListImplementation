@@ -41,6 +41,15 @@
 
             Console.WriteLine(linkedList.IsEmpty());
 
+            // Queue operations
+            linkedList.Enqueue("Tarak");
+            linkedList.Enqueue("Pranathi");
+            linkedList.Display();
+
+            linkedList.Dequeue();
+            linkedList.Display();
+            Console.WriteLine(linkedList.PeekQueue());
+            Console.WriteLine(linkedList.IsQueueEmpty());
         }
     }
 }

@@ -62,7 +62,7 @@ namespace LinkedListImplementation
             Node<T> newNode = new Node<T>(data);
 
             Node<T> temp = head;
-            while (!temp.Data.Equals(oldData)) 
+            while (!temp.Data.Equals(oldData))
             {
                 temp = temp.Next;
             }
@@ -158,6 +158,33 @@ namespace LinkedListImplementation
         }
 
         public bool IsEmpty()
+        {
+            return head == null;
+        }
+
+
+        // Queue Operations
+
+        public void Enqueue(T data)
+        {
+            AddFirst(data);
+        }
+
+        public void Dequeue()
+        {
+            DeleteLast();
+        }
+
+        public T PeekQueue()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            return head.Data;
+        }
+
+        public bool IsQueueEmpty()
         {
             return head == null;
         }
