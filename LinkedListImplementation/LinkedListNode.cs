@@ -136,6 +136,31 @@ namespace LinkedListImplementation
                 Console.WriteLine("END");
             }
         }
+
+        // Stack Operations
+        public void Push(T data)
+        {
+            AddFirst(data);
+        }
+
+        public void Pop()
+        {
+            DeleteFirst();
+        }
+
+        public T Peek()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            return head.Data;
+        }
+
+        public bool IsEmpty()
+        {
+            return head == null;
+        }
     }
 }
 

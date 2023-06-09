@@ -27,6 +27,20 @@
 
             linkedList.DeleteParticular("Kholi");
             linkedList.Display();
+
+            // Stack Operations
+
+            linkedList.Push("Sai Tej");
+            linkedList.Push("Samyuktha");
+            linkedList.Display();
+
+            linkedList.Pop();
+            linkedList.Display();
+
+            Console.WriteLine(linkedList.Peek());
+
+            Console.WriteLine(linkedList.IsEmpty());
+
         }
     }
 }
